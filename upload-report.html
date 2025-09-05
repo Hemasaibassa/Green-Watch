@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Upload Soil Report</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #0da596;
+      --primary-darker-color: #0a877a;--secondary-color: #e0f2f1;
+      --background-color: #f8fcfb;
+      --text-primary: #1a202c;
+      --text-secondary: #4a5568;
+      --accent-color: #2dd4bf;
+      --button-dark-color: #086F65;
+      --button-dark-hover-color: #065951;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-primary);
+    }
+    .file-uploaded .upload-prompt {
+        display: none;
+    }
+    .file-uploaded .file-details {
+        display: flex;
+    }
+    .file-details {
+        display: none;
+    }
+    .soil-analysis-button {
+        background-color: #a7d8d4;cursor: not-allowed;
+    }
+    .file-uploaded .soil-analysis-button {
+        background-color: var(--button-dark-color);
+        cursor: pointer;
+    }
+    .file-uploaded .soil-analysis-button:hover {
+        background-color: var(--button-dark-hover-color);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)]">
+<div class="flex flex-col min-h-screen justify-between" id="upload-container">
+<header class="bg-[var(--background-color)] shadow-sm sticky top-0 z-10">
+<div class="container mx-auto px-4 max-w-md">
+<div class="flex items-center justify-between py-4">
+<button class="text-[var(--text-primary)] p-2 -ml-2">
+<span class="material-symbols-outlined">
+              arrow_back_ios_new
+            </span>
+</button>
+<h1 class="text-xl font-bold text-[var(--text-primary)] text-center flex-1">Upload Soil Report</h1>
+<div class="w-8"></div>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-4 py-8 max-w-md">
+<div class="text-center">
+<p class="text-base text-[var(--text-secondary)] leading-relaxed mb-8">
+          Upload your soil analysis report to get personalized insights and recommendations for your farm.
+        </p>
+<div class="border-2 border-dashed border-[var(--primary-color)] rounded-xl p-8 text-center cursor-pointer hover:bg-[var(--secondary-color)] transition-colors duration-200 ease-in-out flex flex-col items-center justify-center space-y-4 mb-6" onclick="document.getElementById('upload-container').classList.toggle('file-uploaded')">
+<div class="upload-prompt">
+<span class="material-symbols-outlined text-5xl text-[var(--primary-color)]">
+              cloud_upload
+            </span>
+<p class="text-[var(--primary-color)] font-semibold">Tap to Upload a File</p>
+<p class="text-sm text-[var(--text-secondary)]">PDF, JPG, PNG (max 10MB)</p>
+</div>
+<div class="file-details items-center justify-between w-full">
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-3xl text-[var(--primary-color)]">description</span>
+<div class="text-left">
+<p class="text-sm font-medium text-[var(--text-primary)]">soil_report.pdf</p>
+<p class="text-xs text-[var(--text-secondary)]">2.3MB</p>
+</div>
+</div>
+<button class="text-[var(--text-secondary)] hover:text-red-500">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+<div class="relative flex py-5 items-center">
+<div class="flex-grow border-t border-gray-300"></div>
+<span class="flex-shrink mx-4 text-[var(--text-secondary)]">OR</span>
+<div class="flex-grow border-t border-gray-300"></div>
+</div>
+<button class="bg-transparent border border-[var(--primary-color)] text-[var(--primary-color)] py-3 px-6 rounded-lg font-semibold hover:bg-[var(--primary-color)] hover:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50 transition-colors duration-200 ease-in-out w-full flex items-center justify-center space-x-2 mb-8">
+<span class="material-symbols-outlined">
+            photo_camera
+          </span>
+<span>Take a Photo of Report</span>
+</button>
+<a href="soil-analysis.html" class="soil-analysis-button text-white py-4 px-6 rounded-lg font-bold text-lg w-full transition-colors duration-300 ease-in-out text-center block">
+    Soil Analysis
+  </a>
+  
+</div>
+</main>
+<footer class="bg-white border-t border-gray-200 sticky bottom-0">
+<nav class="container mx-auto px-4 max-w-md flex justify-around py-2">
+    <a class="flex flex-col items-center justify-center text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors duration-200 ease-in-out w-1/3" 
+    href="dashboard.html">
+   <span class="material-symbols-outlined">
+       grid_view
+   </span>
+   <span class="text-xs font-medium">Dashboard</span>
+ </a>
+ 
+<a class="flex flex-col items-center justify-center text-[var(--primary-color)] hover:text-[var(--primary-color)] transition-colors duration-200 ease-in-out w-1/3" href="#">
+<div class="bg-[var(--button-dark-color)] p-3 rounded-full -mt-6 shadow-lg">
+<span class="material-symbols-outlined text-white">
+              eco
+            </span>
+</div>
+<span class="text-xs font-medium mt-1">My Crops</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors duration-200 ease-in-out w-1/3" href="#">
+<span class="material-symbols-outlined">
+            settings
+          </span>
+<span class="text-xs font-medium">Settings</span>
+</a>
+</nav>
+</footer>
+</div>
+</body></html>

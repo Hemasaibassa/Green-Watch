@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Disease Detection</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #13ecd6;
+      --secondary-color: #2d3748;
+      --background-color: #E0F2F1;
+      --text-primary: #004D40;
+      --text-secondary: #00796B;
+      --accent-color: #009688;
+      --button-bg: #B2DFDB;
+      --button-text: #004D40;
+    }
+    body {
+      font-family: 'Lexend', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-primary);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+<div class="flex flex-col h-screen">
+<header class="flex items-center p-4 border-b border-teal-200">
+<button class="p-2 text-[var(--text-primary)]">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h1 class="flex-1 text-xl font-bold text-center -ml-8">Disease Detection</h1>
+</header>
+<main class="flex-grow flex flex-col justify-center items-center px-4">
+<div class="w-full max-w-sm text-center">
+<div class="mb-12">
+<svg class="mx-auto h-24 w-24 text-[var(--accent-color)]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9A2.25 2.25 0 0 0 13.5 5.25h-9A2.25 2.25 0 0 0 2.25 7.5v9A2.25 2.25 0 0 0 4.5 18.75Z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<p class="text-[var(--text-secondary)] text-lg mb-8">
+                    Select an image of the affected crop to analyze for diseases.
+                </p>
+<div class="space-y-4">
+<button class="w-full bg-[var(--button-bg)] text-[var(--button-text)] font-bold py-4 px-6 rounded-xl hover:bg-teal-200 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:ring-opacity-75 transition-colors duration-200 flex items-center justify-center gap-3">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M208,56H180.28L166.65,35.56A16,16,0,0,0,152,28H104a16,16,0,0,0-14.65,7.56L75.72,56H48A24,24,0,0,0,24,80V192a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V80A24,24,0,0,0,208,56Zm-80,112a40,40,0,1,1,40-40A40,40,0,0,1,128,168Z"></path></svg>
+<span>Capture Photo</span>
+</button>
+<button class="w-full bg-[var(--button-bg)] text-[var(--button-text)] font-bold py-4 px-6 rounded-xl hover:bg-teal-200 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:ring-opacity-75 transition-colors duration-200 flex items-center justify-center gap-3">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a16,16,0,1,1-16,16A16,16,0,0,1,176,88Zm-40.49,20.49L72,172V144l40-40,23.51,23.51,1.18,1.18L152,144l32,32v28Z"></path></svg>
+<span>Upload Photo</span>
+</button>
+</div>
+</div>
+</main>
+<footer class="p-4">
+    <a href="analysis.html" 
+    class="w-full bg-[var(--accent-color)] text-white font-bold py-4 px-6 rounded-xl 
+           hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] 
+           focus:ring-opacity-75 transition-colors duration-200 flex items-center justify-center gap-3">
+   <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+     <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+   </svg>
+   <span>Analyze</span>
+ </a>
+ 
+</footer>
+</div>
+
+</body></html>

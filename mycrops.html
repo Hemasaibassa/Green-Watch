@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #15b7a6;
+      --secondary-color: #e6f7f5;
+      --background-color: #f8fcfc;
+      --text-primary: #1a202c;
+      --text-secondary: #4a5568;
+      --accent-color: #2dd4bf;
+    }
+    body {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+<div class="relative flex size-full min-h-screen flex-col justify-between overflow-x-hidden">
+<div>
+<header class="bg-white shadow-sm p-4 flex justify-between items-center sticky top-0 z-10">
+<button class="icon_button p-2 rounded-full hover:bg-gray-100 transition-colors duration-200 ease-in-out">
+<svg class="size-6 text-[var(--text-primary)]" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 12H5"></path>
+<path d="M12 19l-7-7 7-7"></path>
+</svg>
+</button>
+<h1 class="text-lg font-bold text-center flex-1">My Crops</h1>
+<div class="w-6"></div>
+</header>
+<main class="p-4 space-y-6">
+<div>
+<h2 class="text-2xl font-semibold text-[var(--text-primary)] mb-4">Crop Overview</h2>
+<div class="space-y-4">
+<div class="card bg-white rounded-lg shadow-sm p-4 border border-gray-200 flex items-center gap-4">
+<img alt="Corn field" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_yVm6mid7dmuaU7GQrz68AHNXz8CTT1kXMybFe3AufUOMMC9UPyGBhtrnhDL1K_fgceKV4tTWgvfh3rbCZBTzWnT5bHd4NR8PCYNTAxoWMnionoKrXvckDkOyeFAXBgcnoMN594ScJS-R6j_pAQrgomL-kOqpYs0nz3hhC3sx09PVdtLzjd1KKDbFTqfahrzErcB1y_blCdI9dKU5tTKOaBMPZFh6JSUr6uUwYdQ5r3IJtm8hxDCq2DjZjSaN7Sai8QMYZsOIsA0"/>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-lg font-bold text-[var(--text-primary)]">Corn</p>
+<p class="text-sm text-[var(--text-secondary)]">Field 1</p>
+</div>
+<span class="status_badge_success bg-green-100 text-green-700 text-xs font-medium px-2.5 py-0.5 rounded-full">Healthy</span>
+</div>
+<p class="text-sm text-[var(--text-secondary)] mt-2">Planted: April 15, 2024</p>
+</div>
+</div>
+<div class="card bg-white rounded-lg shadow-sm p-4 border border-gray-200 flex items-center gap-4">
+<img alt="Soybean field" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3cHJUricXgo1PMCulD3bUcOm7bkA8BxmnSqOw-PmrsmdvRfEgOsniNnsGJocJn4LhpmEq9cVKlPAn2P7rMOiZxUdAgsUejkr4KjFPoMFYSC-iMKAbYYfn1nJIqmkQXRliMrCjD-mdO_Oy5SMyFIzPWgxwuJRdzxcv9w9k_T0yKbtQargTJ1Au1RuvRITqtngoc-NeO0vz-kHtm57uRdZohFKxNugd7xEn17DJIpoORJUHgM9BiRzc6LFWbbv7_7gAjXB_19yBpfs"/>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-lg font-bold text-[var(--text-primary)]">Soybeans</p>
+<p class="text-sm text-[var(--text-secondary)]">Field 2</p>
+</div>
+<span class="status_badge_warning bg-yellow-100 text-yellow-700 text-xs font-medium px-2.5 py-0.5 rounded-full">Needs Water</span>
+</div>
+<p class="text-sm text-[var(--text-secondary)] mt-2">Planted: May 1, 2024</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-2xl font-semibold text-[var(--text-primary)] mb-4">Soil Analysis</h2>
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 divide-y divide-gray-200">
+<div class="list_item flex items-center justify-between py-3 px-4">
+<div>
+<p class="font-medium text-[var(--text-primary)]">pH Level</p>
+<p class="text-sm text-[var(--text-secondary)]">Last Analyzed: June 10, 2024</p>
+</div>
+<p class="font-semibold text-lg text-[var(--text-primary)]">6.5</p>
+</div>
+<div class="list_item flex items-center justify-between py-3 px-4">
+<div>
+<p class="font-medium text-[var(--text-primary)]">Nitrogen Level</p>
+<p class="text-sm text-[var(--text-secondary)]">Last Analyzed: June 10, 2024</p>
+</div>
+<span class="status_badge_info bg-blue-100 text-blue-700 text-xs font-medium px-2.5 py-0.5 rounded-full">Medium</span>
+</div>
+<div class="list_item flex items-center justify-between py-3 px-4">
+<div>
+<p class="font-medium text-[var(--text-primary)]">Phosphorus Level</p>
+<p class="text-sm text-[var(--text-secondary)]">Last Analyzed: June 10, 2024</p>
+</div>
+<span class="status_badge_success bg-green-100 text-green-700 text-xs font-medium px-2.5 py-0.5 rounded-full">High</span>
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-white border-t border-gray-200">
+<nav class="flex justify-around">
+    <a class="flex flex-col items-center justify-center p-3 text-gray-500 hover:text-[var(--primary-color)] transition-colors" href="dashboard.html">
+        <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path>
+        </svg>
+        <span class="text-xs font-medium">Dashboard</span>
+      </a>
+      
+<a class="flex flex-col items-center justify-center p-3 text-[var(--primary-color)] font-semibold border-t-2 border-[var(--primary-color)]" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M205.41,151.07a60.9,60.9,0,0,1-31.83,8.86,71.71,71.71,0,0,1-27.36-5.66A55.55,55.55,0,0,0,136,186.51V216a8,8,0,0,1-8.53,8,8.18,8.18,0,0,1-7.47-8.25V203.31L81.38,164.69A52.5,52.5,0,0,1,63.44,168a45.82,45.82,0,0,1-23.92-6.67C17.73,148.09,6,117.62,8.27,79.79a8,8,0,0,1,7.52-7.52c37.83-2.23,68.3,9.46,81.5,31.25A46,46,0,0,1,103.74,132a4,4,0,0,1-6.89,2.43l-19.2-20.1a8,8,0,0,0-11.31,11.31l53.88,55.25c.06-.78.13-1.56.21-2.33a68.56,68.56,0,0,1,18.64-39.46l50.59-53.46a8,8,0,0,0-11.31-11.32l-49,51.82a4,4,0,0,1-6.78-1.74c-4.74-17.48-2.65-34.88,6.4-49.82,17.86-29.48,59.42-45.26,111.18-42.22a8,8,0,0,1,7.52,7.52C250.67,91.65,234.89,133.21,205.41,151.07Z"></path></svg>
+<span class="text-xs font-medium">My Crops</span>
+</a>
+<a class="flex flex-col items-center justify-center p-3 text-gray-500 hover:text-[var(--primary-color)] transition-colors" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"></path></svg>
+<span class="text-xs font-medium">Settings</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

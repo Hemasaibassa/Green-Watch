@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Farm App - Language Selection</title>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #14B8A6;
+      --secondary-color: #E6F8F6;
+      --background-color: #F0FDFA;
+      --text-primary: #1a202c;
+      --text-secondary: #4a5568;
+      --accent-color: #14B8A6;
+      --br-none: 0;
+      --br-sm: 0.125rem;
+      --br-md: 0.375rem;
+      --br-lg: 0.5rem;
+      --br-xl: 0.75rem;
+      --br-2xl: 1rem;
+      --br-3xl: 1.5rem;
+      --br-full: 9999px;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .language-item.selected {
+      background-color: var(--secondary-color);
+      border-color: var(--primary-color);
+    }
+    .language-item.selected .language-text {
+      color: var(--primary-color);
+      font-weight: 700;
+    }
+    .language-item.selected .icon-check {
+      opacity: 1;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+</style>
+</head>
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+<div class="flex flex-col h-screen max-w-md mx-auto p-6">
+<main class="flex-grow flex flex-col justify-center items-center">
+<div class="flex flex-col items-center">
+<svg class="h-24 w-24 text-[var(--primary-color)] mb-8" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24">
+<path d="M0 0h24v24H0z" stroke="none"></path>
+<path d="M11.998 4.002l.002 6c0 4.002-3.002 7.002-7 7.002"></path>
+<path d="M17.998 11.002c0 4.002-3.002 7.002-7 7.002"></path>
+<path d="M12 20l-1.5 -1.5"></path>
+<path d="M14.5 20l-1.5 -1.5"></path>
+<path d="M7.5 20l-1.5 -1.5"></path>
+<path d="M4.998 4.002c1.929 0 3.633 1.01 4.5 2.502"></path>
+<path d="M9.498 6.502c1.929 0 3.633 1.01 4.5 2.502"></path>
+</svg>
+<h1 class="text-3xl font-bold text-center text-[var(--text-primary)] mb-4">Choose Your Language</h1>
+<p class="text-center text-lg text-[var(--text-secondary)] mb-12">Select your preferred language to continue.</p>
+</div>
+<div class="space-y-4 w-full" id="language-options">
+<button class="language-item flex items-center justify-between py-5 px-6 bg-white rounded-[var(--br-xl)] border-2 border-transparent transition-all duration-200 ease-in-out w-full shadow-sm hover:border-[var(--primary-color)] active:bg-teal-100" onclick="selectLanguage(this)">
+<span class="language-text text-xl font-medium text-[var(--text-primary)]">English</span>
+<span class="material-symbols-outlined icon-check text-[var(--primary-color)] text-2xl opacity-0">check_circle</span>
+</button>
+<button class="language-item flex items-center justify-between py-5 px-6 bg-white rounded-[var(--br-xl)] border-2 border-transparent transition-all duration-200 ease-in-out w-full shadow-sm hover:border-[var(--primary-color)] active:bg-teal-100" onclick="selectLanguage(this)">
+<span class="language-text text-xl font-medium text-[var(--text-primary)]">हिंदी</span>
+<span class="material-symbols-outlined icon-check text-[var(--primary-color)] text-2xl opacity-0">check_circle</span>
+</button>
+<button class="language-item flex items-center justify-between py-5 px-6 bg-white rounded-[var(--br-xl)] border-2 border-transparent transition-all duration-200 ease-in-out w-full shadow-sm hover:border-[var(--primary-color)] active:bg-teal-100" onclick="selectLanguage(this)">
+<span class="language-text text-xl font-medium text-[var(--text-primary)]">मराठी</span>
+<span class="material-symbols-outlined icon-check text-[var(--primary-color)] text-2xl opacity-0">check_circle</span>
+</button>
+</div>
+</main>
+<footer class="py-4">
+<button class="bg-[var(--primary-color)] text-white py-4 px-6 rounded-[var(--br-2xl)] font-semibold text-lg w-full transition-colors duration-200 ease-in-out hover:bg-teal-600 active:bg-teal-700 disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed shadow-lg shadow-teal-500/30" disabled id="continue-btn">
+  Continue
+</button>
+</footer>
+</div>
+
+<script>
+  let selectedLanguage = null;
+  const languageOptions = document.getElementById('language-options');
+  const continueBtn = document.getElementById('continue-btn');
+
+  function selectLanguage(element) {
+    // Remove 'selected' class from all buttons
+    const buttons = languageOptions.getElementsByTagName('button');
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].classList.remove('selected');
+      buttons[i].classList.add('border-transparent');
+      buttons[i].classList.remove('border-[var(--primary-color)]');
+    }
+
+    // Add 'selected' class to the clicked button
+    element.classList.add('selected');
+    element.classList.remove('border-transparent');
+    element.classList.add('border-[var(--primary-color)]');
+
+    // ✅ only new line: store the language text
+    selectedLanguage = element.querySelector('.language-text').innerText;
+    continueBtn.disabled = false;
+  }
+
+  // ✅ added: navigate on Continue
+  continueBtn.addEventListener('click', function() {
+    if (selectedLanguage) {
+      localStorage.setItem("preferredLanguage", selectedLanguage);
+      window.location.href = "auth.html";
+    }
+  });
+</script>
+
+</body>
+</html>
+
+

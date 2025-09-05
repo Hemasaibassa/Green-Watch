@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Soil Analysis Results</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #0da596;
+            --primary-darker-color: #0a877a;
+            --secondary-color: #e0f2f1;
+            --background-color: #f8fcfb;
+            --text-primary: #1a202c;
+            --text-secondary: #4a5568;
+            --accent-color: #2dd4bf;
+            --button-dark-color: #086F65;
+            --button-dark-hover-color: #065951;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-primary);
+        }
+        .progress-bar-ph {
+            width: 65%;
+        }
+        .progress-bar-n {
+            width: 75%;
+        }
+        .progress-bar-p {
+            width: 50%;
+        }
+        .progress-bar-k {
+            width: 80%;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)]">
+<div class="flex flex-col h-screen">
+<header class="bg-white shadow-sm">
+<div class="container mx-auto px-4 max-w-md">
+<div class="flex items-center justify-between py-3">
+<button class="text-[var(--text-primary)] p-2 -ml-2">
+<span class="material-symbols-outlined">
+                            arrow_back_ios_new
+                        </span>
+</button>
+<h1 class="text-lg font-bold text-[var(--text-primary)] text-center flex-1">Soil Analysis Results</h1>
+<div class="w-8"></div>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-4 py-4 max-w-md flex flex-col">
+<div class="bg-white rounded-xl shadow-md p-4 mb-4">
+<h2 class="text-base font-semibold text-[var(--text-primary)] mb-3">Key Metrics</h2>
+<div class="space-y-3">
+<div class="flex items-center">
+<div class="w-20">
+<p class="font-medium text-sm text-[var(--text-primary)]">pH Level</p>
+<p class="text-xl font-bold text-[var(--primary-color)]">6.5</p>
+</div>
+<div class="flex-1">
+<div class="w-full bg-gray-200 rounded-full h-2">
+<div class="bg-[var(--primary-color)] h-2 rounded-full progress-bar-ph"></div>
+</div>
+<div class="flex justify-between text-xs text-[var(--text-secondary)] mt-1">
+<span class="text-[10px]">Acidic</span>
+<span class="text-[10px]">Neutral</span>
+<span class="text-[10px]">Alkaline</span>
+</div>
+</div>
+</div>
+<div>
+<p class="font-medium text-sm text-[var(--text-primary)] mb-2">Nutrient Levels</p>
+<div class="space-y-2">
+<div class="flex items-center">
+<p class="w-20 text-xs text-[var(--text-secondary)]">Nitrogen (N)</p>
+<div class="flex-1 flex items-center">
+<div class="w-full bg-gray-200 rounded-full h-1.5 mr-2">
+<div class="bg-[var(--accent-color)] h-1.5 rounded-full progress-bar-n"></div>
+</div>
+<span class="text-xs font-semibold text-[var(--text-primary)]">High</span>
+</div>
+</div>
+<div class="flex items-center">
+<p class="w-20 text-xs text-[var(--text-secondary)]">Phosphorus (P)</p>
+<div class="flex-1 flex items-center">
+<div class="w-full bg-gray-200 rounded-full h-1.5 mr-2">
+<div class="bg-[var(--accent-color)] h-1.5 rounded-full progress-bar-p"></div>
+</div>
+<span class="text-xs font-semibold text-[var(--text-primary)]">Medium</span>
+</div>
+</div>
+<div class="flex items-center">
+<p class="w-20 text-xs text-[var(--text-secondary)]">Potassium (K)</p>
+<div class="flex-1 flex items-center">
+<div class="w-full bg-gray-200 rounded-full h-1.5 mr-2">
+<div class="bg-[var(--accent-color)] h-1.5 rounded-full progress-bar-k"></div>
+</div>
+<span class="text-xs font-semibold text-[var(--text-primary)]">High</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-md p-4 flex-grow flex flex-col">
+<h2 class="text-base font-semibold text-[var(--text-primary)] mb-3">Top Crop Recommendations</h2>
+<div class="flex-grow divide-y divide-gray-200">
+<div class="flex items-center py-2.5">
+<img alt="Corn" class="w-10 h-10 rounded-lg object-cover mr-3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVuhg6a-xxlu1rS7Kmakv32sUbk8C2HZ55k0jmgzzMhQ7NQXLvyOYjqtb-fEcgKxNuX1JAiL3G6-wEjqURBxe7RO88N4fXxXP4yWWfHf4yn2Q_VeuZc1l_SoSti5zvdn_GsHtnQyb4WyLcaMhWo5-hlm8nEIOEtrpFcUaJT0Q7gKiBBfetwYjL0x1Y3FwR4AazExNFfxhNQz2fGIgCJ4sKL4cdM0BQQCmB4kakpf4PvcVJlKBryNCjOjTUbmUk2_UuhEiq75roFiM"/>
+<div class="flex-1">
+<p class="font-semibold text-sm text-[var(--text-primary)]">Corn</p>
+<p class="text-xs text-[var(--text-secondary)]">High yield potential.</p>
+</div>
+<span class="material-symbols-outlined text-[var(--primary-color)] text-lg">
+                            arrow_forward_ios
+                        </span>
+</div>
+<div class="flex items-center py-2.5">
+<img alt="Soybeans" class="w-10 h-10 rounded-lg object-cover mr-3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJZ2Cos9Vl3txuIC3yL3neajaD-TaHqkw11W0D1bgqiX1KLZn02vHpsXfRakGn-1TZiYSgOqUbm5B120h6oWAMcp_TyzjSn5P4pNM4ibYRdIc8ZMb77BNskZxVGH0F43Z43lcXrCd0nFXT9uiEoUhW9FByxDnstG2RDLAsUNfBjCwhT3zXXDbEbNb_54hufDnPr0uAmDrfl57wemfb3RyK9WKhDC7As5B6OT1O6U_XPoPzRdpIm91LoUGpcacCY3ZSm2PUDtatxMo"/>
+<div class="flex-1">
+<p class="font-semibold text-sm text-[var(--text-primary)]">Soybeans</p>
+<p class="text-xs text-[var(--text-secondary)]">Excellent for nitrogen fixing.</p>
+</div>
+<span class="material-symbols-outlined text-[var(--primary-color)] text-lg">
+                            arrow_forward_ios
+                        </span>
+</div>
+<div class="flex items-center py-2.5">
+<img alt="Wheat" class="w-10 h-10 rounded-lg object-cover mr-3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8MAlSPWVW9nE-RruczxqWXNINCft0ClUU5oY78YeBiRLNDoQQ6fthMxPlfhjoc6Z5l6Hm5oLfdFZKhoELeYIUfC_FlBMwvP598mPhqXJwsiXbzMIPZUx7Pd2dPNa-Nfi_DYeHDukgVNom34SOR0cviZ-oTZiSMtW_-zMHmyE0OGnEQ9zTbYEgp2oWrsNWeMeciNhIFC_aRZHhtvHAZzBQ3RMMhHedKkY9BtTAx0F5tSa_uTp2hxBQ_ymEU2qhAUvBtyqTD16b1iM"/>
+<div class="flex-1">
+<p class="font-semibold text-sm text-[var(--text-primary)]">Wheat</p>
+<p class="text-xs text-[var(--text-secondary)]">Hardy and well-suited.</p>
+</div>
+<span class="material-symbols-outlined text-[var(--primary-color)] text-lg">
+                            arrow_forward_ios
+                        </span>
+</div>
+</div>
+<button class="w-full mt-3 bg-[var(--secondary-color)] text-[var(--primary-darker-color)] py-2.5 rounded-lg font-semibold hover:bg-[#cce8e6] transition-colors duration-200 text-sm">
+                    View All Recommendations
+                </button>
+</div>
+</main>
+<footer class="bg-white border-t border-gray-200">
+<nav class="container mx-auto px-4 max-w-md flex justify-around py-1.5">
+    <a class="flex flex-col items-center justify-center text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors duration-200 ease-in-out w-1/3 py-1" href="dashboard.html">
+        <span class="material-symbols-outlined">
+            grid_view
+        </span>
+        <span class="text-xs font-medium">Dashboard</span>
+      </a>
+      
+<a class="flex flex-col items-center justify-center text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors duration-200 ease-in-out w-1/3 py-1" href="#">
+<span class="material-symbols-outlined text-[var(--primary-color)]">
+                        eco
+                    </span>
+<span class="text-xs font-medium text-[var(--primary-color)]">Analysis</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors duration-200 ease-in-out w-1/3 py-1" href="#">
+<span class="material-symbols-outlined">
+                        settings
+                    </span>
+<span class="text-xs font-medium">Settings</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

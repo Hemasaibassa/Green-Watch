@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #15b7a6;
+            --secondary-color: #e0f2f0;
+            --background-color: #f8fcfc;
+            --text-primary: #1a202c;
+            --text-secondary: #4a5568;
+            --accent-color: #2dd4bf;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-primary);
+        }
+    </style>
+<style>
+        body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased">
+<div class="relative flex size-full min-h-screen flex-col bg-[var(--background-color)] group/design-root overflow-x-hidden">
+<div class="flex flex-col flex-1">
+<header class="bg-white shadow-sm py-4 px-4 flex items-center justify-between border-b border-gray-200 z-20">
+<button class="icon_button">
+<span class="material-symbols-outlined">arrow_back_ios_new</span>
+</button>
+<h1 class="text-xl font-bold text-[var(--text-primary)] flex-1 text-center">Schedule Lab Test</h1>
+<div class="w-10"></div>
+</header>
+<main class="flex flex-col flex-1">
+<div class="relative flex-1">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA3UfRJEw4SA9W0W-Ywl8Rvq7YKGou1cYilIV9_nv8U16jAbTasn2c-Rww1D3mrmCBoD2KpixU-3N8akEBceHdmAbtApRW8gpGVjiloGBxG2aaA4SQDmZga86EQlc_sqp4fG822tufksQVOCmXlfoV_snxvaoVNkN_G31ZphKKai4-XDq4FkrvtednxjtAJwG29ONGZqcx90KryFA6n3BtEnirepgrHtW7W19C3CMBaBPqoE8VQfPXVysAIqYVsUU4xKNrDyRNSM_E"); filter: grayscale(30%) contrast(1.1) brightness(1.1);'>
+</div>
+<div class="absolute inset-0 bg-[var(--primary-color)]/10"></div>
+<div class="absolute inset-0 flex flex-col justify-between p-4">
+<div class="form_group">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-secondary)]">search</span>
+<input class="input pl-10 bg-white/80 backdrop-blur-sm" placeholder="Search for labs in Pune" type="text"/>
+</div>
+</div>
+<div class="absolute" style="top: 48%; left: 45%;">
+<div class="relative flex flex-col items-center">
+<div class="bg-[var(--primary-color)] rounded-full p-2 shadow-lg ring-4 ring-white/50">
+<span class="material-symbols-outlined text-white text-3xl">science</span>
+</div>
+<div class="absolute -bottom-5 w-max bg-white/80 backdrop-blur-sm px-2 py-1 rounded-md text-xs font-semibold text-[var(--text-primary)] shadow-md">Your Location</div>
+</div>
+</div>
+<div class="absolute" style="top: 60%; left: 30%;">
+<div class="bg-white p-1.5 rounded-full shadow-lg"><span class="material-symbols-outlined text-[var(--primary-color)] text-2xl">location_on</span></div>
+</div>
+<div class="absolute" style="top: 40%; left: 70%;">
+<div class="bg-white p-1.5 rounded-full shadow-lg"><span class="material-symbols-outlined text-[var(--primary-color)] text-2xl">location_on</span></div>
+</div>
+<div class="absolute" style="top: 35%; left: 25%;">
+<div class="bg-white p-1.5 rounded-full shadow-lg"><span class="material-symbols-outlined text-[var(--primary-color)] text-2xl">location_on</span></div>
+</div>
+<div class="flex flex-col items-end gap-3 self-end">
+<div class="flex flex-col gap-1 rounded-lg bg-white/80 backdrop-blur-sm shadow-md">
+<button class="icon_button">
+<span class="material-symbols-outlined">add</span>
+</button>
+<div class="h-px bg-gray-200"></div>
+<button class="icon_button">
+<span class="material-symbols-outlined">remove</span>
+</button>
+</div>
+<button class="icon_button bg-white/80 backdrop-blur-sm shadow-md">
+<span class="material-symbols-outlined">my_location</span>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-t-2xl shadow-lg -mt-4 z-10 flex-shrink-0">
+<div class="flex justify-center pt-3 pb-2">
+<div class="h-1.5 w-10 rounded-full bg-gray-300"></div>
+</div>
+<div class="px-4 pt-2 pb-4">
+<h2 class="text-lg font-bold text-[var(--text-primary)] mb-3">Nearby Labs in Pune</h2>
+<div class="flex gap-3 mb-4">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[var(--secondary-color)] px-4">
+<p class="text-sm font-medium text-[var(--text-primary)]">Distance</p>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[var(--secondary-color)] px-4">
+<p class="text-sm font-medium text-[var(--text-primary)]">Services</p>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+</div>
+<div class="space-y-2">
+<div class="list_item_interactive rounded-lg">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center rounded-lg bg-[var(--secondary-color)] shrink-0 size-12">
+<span class="material-symbols-outlined text-[var(--primary-color)]">science</span>
+</div>
+<div>
+<p class="list_item_title">Kisan Soil Testing</p>
+<p class="list_item_subtitle">52, FC Road, Pune</p>
+</div>
+</div>
+<button class="bg-[var(--primary-color)] text-white py-2 px-4 rounded-full font-semibold hover:bg-[var(--accent-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50 transition-colors duration-200 ease-in-out text-sm">
+                                    Schedule
+                                </button>
+</div>
+<div class="list_item_interactive rounded-lg">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center rounded-lg bg-[var(--secondary-color)] shrink-0 size-12">
+<span class="material-symbols-outlined text-[var(--primary-color)]">science</span>
+</div>
+<div>
+<p class="list_item_title">AgriTech Labs Pune</p>
+<p class="list_item_subtitle">Hinjewadi Phase 1, Pune</p>
+</div>
+</div>
+<button class="bg-[var(--primary-color)] text-white py-2 px-4 rounded-full font-semibold hover:bg-[var(--accent-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50 transition-colors duration-200 ease-in-out text-sm">
+                                    Schedule
+                                </button>
+</div>
+<div class="list_item_interactive rounded-lg">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center rounded-lg bg-[var(--secondary-color)] shrink-0 size-12">
+<span class="material-symbols-outlined text-[var(--primary-color)]">science</span>
+</div>
+<div>
+<p class="list_item_title">Soil Health Clinic</p>
+<p class="list_item_subtitle">Kothrud, Pune</p>
+</div>
+</div>
+<button class="bg-[var(--primary-color)] text-white py-2 px-4 rounded-full font-semibold hover:bg-[var(--accent-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50 transition-colors duration-200 ease-in-out text-sm">
+                                    Schedule
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<nav class="flex justify-around border-t border-gray-200 bg-white py-2 sticky bottom-0 z-20">
+    <a class="flex flex-col items-center justify-center gap-1 text-[var(--primary-color)]" href="dashboard.html">
+        <span class="material-symbols-outlined">home</span>
+        <p class="text-xs font-medium">Dashboard</p>
+      </a>
+      
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">
+<span class="material-symbols-outlined">grass</span>
+<p class="text-xs font-medium">My Crops</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<p class="text-xs font-medium">Settings</p>
+</a>
+</nav>
+</div>
+
+</body></html>

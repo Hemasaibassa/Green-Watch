@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #0da596;
+            --secondary-color: #d1fae5;
+            --background-color: #f0fdfa;
+            --text-primary: #1f2937;
+            --text-secondary: #4b5563;
+            --accent-color: #065f46;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-primary);
+        }
+        .weather-card {
+            background: linear-gradient(135deg, #2dd4bf, #0d9488);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)]">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<header class="sticky top-0 z-10 bg-[var(--background-color)]/80 backdrop-blur-sm">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between py-4">
+<div class="w-12"></div>
+<h1 class="text-xl font-bold text-[var(--text-primary)]">Dashboard</h1>
+<div class="w-12 flex justify-end">
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-gray-200/50">
+<span class="material-symbols-outlined text-[var(--text-primary)]">
+                                settings
+                            </span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="container mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+<section class="my-6">
+<h2 class="text-lg font-semibold text-[var(--text-primary)] mb-4">Current Weather</h2>
+<div class="weather-card text-white rounded-2xl p-6 flex items-center justify-between shadow-lg">
+<div class="flex flex-col">
+<span class="text-5xl font-bold">28°C</span>
+<span class="text-lg font-medium">Sunny</span>
+<span class="text-sm opacity-80">Humidity: 60%, Wind: 10 km/h</span>
+</div>
+<div class="text-8xl">
+<span class="material-symbols-outlined !text-8xl">
+                            sunny
+                        </span>
+</div>
+</div>
+</section>
+<section class="my-6">
+<h2 class="text-lg font-semibold text-[var(--text-primary)] mb-4">Quick Actions</h2>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+  <a href="upload-report.html" 
+  class="bg-[var(--primary-color)] text-white py-4 px-4 rounded-xl shadow-md hover:bg-[var(--accent-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50 flex flex-col items-center justify-center gap-2 text-center">
+  <span class="material-symbols-outlined">upload_file</span>
+  <span class="font-semibold text-sm">Upload Report</span>
+</a>
+
+<a href="schedule-test.html" class="bg-[var(--primary-color)] text-white py-4 px-4 rounded-xl shadow-md hover:bg-[var(--accent-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50 flex flex-col items-center justify-center gap-2 text-center">
+  <span class="material-symbols-outlined">science</span>
+  <span class="font-semibold text-sm">Schedule Test</span>
+</a>
+
+<a href="disease-detection.html" 
+   class="bg-white text-[var(--primary-color)] py-4 px-4 rounded-xl shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50 flex flex-col items-center justify-center gap-2 text-center">
+  <span class="material-symbols-outlined">pest_control</span>
+  <span class="font-semibold text-sm">Disease Detection</span>
+</a>
+<a href="calendar.html" 
+   class="bg-white text-[var(--primary-color)] py-4 px-4 rounded-xl shadow-md 
+          hover:bg-gray-100 focus:outline-none focus:ring-2 
+          focus:ring-[var(--primary-color)] focus:ring-opacity-50 
+          flex flex-col items-center justify-center gap-2 text-center">
+  <span class="material-symbols-outlined">calendar_month</span>
+  <span class="font-semibold text-sm">Calendar</span>
+</a>
+
+</div>
+</section>
+<section class="my-6">
+<h2 class="text-lg font-semibold text-[var(--text-primary)] mb-4">Recent Alerts</h2>
+<div class="space-y-3">
+<div class="bg-white rounded-xl shadow-sm p-4 flex items-center gap-4">
+<span class="material-symbols-outlined text-orange-500 text-3xl">warning</span>
+<div>
+<p class="font-semibold text-base text-[var(--text-primary)]">High Pest Activity</p>
+<p class="text-sm text-[var(--text-secondary)]">Detected in Corn Field - Section B</p>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-sm p-4 flex items-center gap-4">
+<span class="material-symbols-outlined text-blue-500 text-3xl">water_drop</span>
+<div>
+<p class="font-semibold text-base text-[var(--text-primary)]">Irrigation Reminder</p>
+<p class="text-sm text-[var(--text-secondary)]">Wheat Field scheduled for tomorrow at 6 AM</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-t border-gray-200">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<nav class="flex justify-around items-center h-20">
+<a class="flex flex-col items-center gap-1 text-[var(--primary-color)]" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-[var(--text-secondary)] hover:text-[var(--primary-color)]" href="mycrops.html">
+  <span class="material-symbols-outlined">grass</span>
+  <span class="text-xs font-medium">My Crops</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-[var(--text-secondary)] hover:text-[var(--primary-color)]" href="settings.html">
+  <span class="material-symbols-outlined">settings</span>
+  <span class="text-xs font-medium">Settings</span>
+</a>
+
+</nav>
+</div>
+</footer>
+</div>
+
+</body></html>

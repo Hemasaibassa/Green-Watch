@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #13ecd6;
+      --secondary-color: #e0fcf9;
+      --background-color: #f8fdfd;
+      --text-primary: #1a202c;
+      --text-secondary: #4a5568;
+      --accent-color: #0fbfac;
+    }
+    body {
+      font-family: 'Lexend', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-primary);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+    .map-marker {
+        box-shadow: 0 0 0 4px rgba(19, 236, 214, 0.5), 0 0 20px rgba(19, 236, 214, 0.7);
+        animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+        0% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(19, 236, 214, 0.7);
+        }
+        70% {
+            transform: scale(1);
+            box-shadow: 0 0 0 10px rgba(19, 236, 214, 0);
+        }
+        100% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(19, 236, 214, 0);
+        }
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 bg-[var(--background-color)]/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="text-[var(--text-primary)]">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h1 class="text-lg font-bold flex-1 text-center pr-6">Disease Detection</h1>
+</div>
+</header>
+<main class="px-4 pb-4">
+<div class="relative w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-2xl shadow-lg" style='background-image: url("https://lh3.googleusercontent.com/pw/AP1GczOKK4n0u4K2wz_Y8J0h5TzG6D3C7h6j4H1g2k0e1v9y4j5m0v5N6F0v8R1W0i9n9l2j5r3T1k0k0v8w6g5e4j3i2g1h1g0j9k8l7m6n5o4p3q2r1s0t9u8v7w6x5y4z3a2b1c0d9e8f7g6h5i4j3k2l1m0n9o8p7q6r5s4t3u2v1w0x9y8z");'>
+<div class="absolute" style="top: 42%; left: 35%;">
+<div class="w-20 h-16 rounded-lg border-4 border-dashed border-[var(--primary-color)] bg-red-500/30"></div>
+</div>
+<div class="absolute" style="top: 65%; left: 60%;">
+<div class="w-24 h-20 rounded-lg border-4 border-dashed border-[var(--primary-color)] bg-red-500/30"></div>
+</div>
+<div class="absolute top-[48%] left-[40%] h-3 w-3 rounded-full bg-[var(--primary-color)] border border-white map-marker"></div>
+<div class="absolute top-[75%] left-[72%] h-3 w-3 rounded-full bg-[var(--primary-color)] border border-white map-marker" style="animation-delay: 0.5s;"></div>
+</div>
+<div class="bg-white rounded-2xl shadow-lg p-6 mt-6">
+<h2 class="text-2xl font-bold text-[var(--text-primary)] mb-2">Disease Alert</h2>
+<p class="text-base text-[var(--text-secondary)] mb-4">
+            Our satellite analysis has detected potential diseases in your fields.
+          </p>
+<div class="space-y-3">
+<div class="flex items-start">
+<div class="flex-shrink-0 h-4 w-4 rounded-full bg-[var(--primary-color)] mt-1.5"></div>
+<div class="ml-3">
+<p class="font-semibold text-[var(--text-primary)]">Turcicum Leaf Blight</p>
+<p class="text-sm text-[var(--text-secondary)]">Detected in field B, section 2.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="flex-shrink-0 h-4 w-4 rounded-full bg-[var(--primary-color)] mt-1.5"></div>
+<div class="ml-3">
+<p class="font-semibold text-[var(--text-primary)]">Rice Blast</p>
+<p class="text-sm text-[var(--text-secondary)]">Detected in paddy field A, section 4.</p>
+</div>
+</div>
+</div>
+<button class="w-full mt-6 bg-[var(--primary-color)] text-black py-3 px-6 rounded-xl font-semibold hover:bg-[var(--accent-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-75 transition-colors duration-200">
+            View Detailed Analysis
+          </button>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-[var(--background-color)]/80 backdrop-blur-sm border-t border-gray-200">
+<nav class="flex justify-around py-2">
+    <a class="flex flex-col items-center justify-end gap-1 text-[var(--text-secondary)]" href="dashboard.html">
+        <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path>
+        </svg>
+        <p class="text-xs font-medium">Dashboard</p>
+      </a>
+      
+<a class="flex flex-col items-center justify-end gap-1 text-[var(--primary-color)]" href="#">
+<div class="relative">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M205.41,151.07a60.9,60.9,0,0,1-31.83,8.86,71.71,71.71,0,0,1-27.36-5.66A55.55,55.55,0,0,0,136,186.51V216a8,8,0,0,1-8.53,8,8.18,8.18,0,0,1-7.47-8.25V203.31L81.38,164.69A52.5,52.5,0,0,1,63.44,168a45.82,45.82,0,0,1-23.92-6.67C17.73,148.09,6,117.62,8.27,79.79a8,8,0,0,1,7.52-7.52c37.83-2.23,68.3,9.46,81.5,31.25A46,46,0,0,1,103.74,132a4,4,0,0,1-6.89,2.43l-19.2-20.1a8,8,0,0,0-11.31,11.31l53.88,55.25c.06-.78.13-1.56.21-2.33a68.56,68.56,0,0,1,18.64-39.46l50.59-53.46a8,8,0,0,0-11.31-11.32l-49,51.82a4,4,0,0,1-6.78-1.74c-4.74-17.48-2.65-34.88,6.4-49.82,17.86-29.48,59.42-45.26,111.18-42.22a8,8,0,0,1,7.52,7.52C250.67,91.65,234.89,133.21,205.41,151.07Z"></path>
+</svg>
+<div class="absolute -top-1 -right-1 h-3 w-3 rounded-full bg-[var(--primary-color)] border-2 border-[var(--background-color)]"></div>
+</div>
+<p class="text-xs font-medium">My Crops</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-[var(--text-secondary)]" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"></path>
+</svg>
+<p class="text-xs font-medium">Settings</p>
+</a>
+</nav>
+<div class="h-safe-bottom"></div>
+</footer>
+</div>
+
+</body></html>
